@@ -12,7 +12,7 @@ A Docker image that bundles the tools most commonly needed for automating, confi
 
 | Tool | Version | Purpose |
 |------|---------|---------|
-| [decK](https://github.com/kong/deck) | 1.59.1 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
+| [decK](https://github.com/kong/deck) | 1.58.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
 | [yq](https://github.com/mikefarah/yq) | 4.53.2 | YAML/JSON processor — manipulate Kong config files |
 | [jq](https://stedolan.github.io/jq/) | apk | JSON query and transformation |
 | [xh](https://github.com/ducaale/xh) | 0.22.2 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |

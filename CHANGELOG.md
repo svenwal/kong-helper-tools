@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [3.14] - 2026-04-29
 
+First release after having been extracted from another repo - now being an independent project.
+
 ### Added
 - Multi-stage Docker build (`downloader` → `runtime` → `test`) to keep build artifacts out of the final image
 - [xh](https://github.com/ducaale/xh) 0.22.2 as a drop-in replacement for HTTPie — same `http`/`https` CLI interface, single static musl binary
