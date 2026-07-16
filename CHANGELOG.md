@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [AI GW 2.0 Pre-release] - 2026-07-16
+
+### Added
+
+* Added kongctl (prerelease-aigw-2)
+
+### Updates
+
+* Updated deck to 1.64.0
+* Updated yq to 4.53.3
+* Updated OpenTofu to 1.12.4
+* Updated xh to 0.26.1
+
 ## [3.14] - 2026-04-29
 
 First release after having been extracted from another repo - now being an independent project.

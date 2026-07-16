@@ -12,11 +12,12 @@ A Docker image that bundles the tools most commonly needed for automating, confi
 
 | Tool | Version | Purpose |
 |------|---------|---------|
-| [decK](https://github.com/kong/deck) | 1.58.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
-| [yq](https://github.com/mikefarah/yq) | 4.53.2 | YAML/JSON processor — manipulate Kong config files |
+| [decK](https://github.com/kong/deck) | 1.64.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
+| [kongctl](https://github.com/kong/kongctl) | prerelease-aigw-2 | Kong control-plane CLI for AI Gateway workflows |
+| [yq](https://github.com/mikefarah/yq) | 4.53.3 | YAML/JSON processor — manipulate Kong config files |
 | [jq](https://stedolan.github.io/jq/) | apk | JSON query and transformation |
-| [xh](https://github.com/ducaale/xh) | 0.22.2 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |
-| [OpenTofu](https://opentofu.org/) | 1.9.0 | Open-source Terraform-compatible IaC — provision Kong resources |
+| [xh](https://github.com/ducaale/xh) | 0.26.1 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |
+| [OpenTofu](https://opentofu.org/) | 1.12.4 | Open-source Terraform-compatible IaC — provision Kong resources |
 | [curl](https://curl.se/) | apk | HTTP requests and automation scripting |
 | [git](https://git-scm.com/) | apk | Source control for config repos and GitOps workflows |
 | bash, dialog | apk | Shell scripting and interactive prompts |
@@ -81,10 +82,11 @@ docker build -t kong-helper-tools .
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `DECK_VERSION` | `1.59.1` | decK version to install |
-| `YQ_VERSION` | `4.53.2` | yq version to install |
-| `OPENTOFU_VERSION` | `1.9.0` | OpenTofu version to install |
-| `XH_VERSION` | `0.22.2` | xh version to install |
+| `DECK_VERSION` | `1.64.0` | decK version to install |
+| `KONGCTL_VERSION` | `prerelease-aigw-2` | kongctl version to install |
+| `YQ_VERSION` | `4.53.3` | yq version to install |
+| `OPENTOFU_VERSION` | `1.12.4` | OpenTofu version to install |
+| `XH_VERSION` | `0.26.1` | xh version to install |
 
 Override during build:
 

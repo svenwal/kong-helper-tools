@@ -1,9 +1,10 @@
 FROM alpine:3.21 AS downloader
 
-ARG DECK_VERSION=1.58.0
-ARG YQ_VERSION=4.53.2
-ARG OPENTOFU_VERSION=1.9.0
-ARG XH_VERSION=0.22.2
+ARG DECK_VERSION=1.64.0
+ARG KONGCTL_VERSION=prerelease-aigw-2
+ARG YQ_VERSION=4.53.3
+ARG OPENTOFU_VERSION=1.12.4
+ARG XH_VERSION=0.26.1
 ARG TARGETPLATFORM
 
 RUN apk add --no-cache curl unzip
@@ -17,6 +18,17 @@ RUN set -ex; \
     curl -fsSL "https://github.com/kong/deck/releases/download/v${DECK_VERSION}/deck_${DECK_VERSION}_linux_${ARCH}.tar.gz" | \
     tar -xz -C /usr/local/bin deck && \
     chmod +x /usr/local/bin/deck
+
+# kongctl
+RUN set -ex; \
+    case "$TARGETPLATFORM" in \
+      "linux/arm64") ARCH=arm64 ;; \
+      *) ARCH=amd64 ;; \
+    esac; \
+    curl -fsSL "https://github.com/kong/kongctl/releases/download/${KONGCTL_VERSION}/kongctl_linux_${ARCH}.zip" -o /tmp/kongctl.zip && \
+    unzip /tmp/kongctl.zip -d /usr/local/bin && \
+    rm /tmp/kongctl.zip && \
+    chmod +x /usr/local/bin/kongctl
 
 # yq
 RUN set -ex; \
@@ -67,15 +79,15 @@ RUN apk add --no-cache \
     dialog \
     ca-certificates
 
-COPY --from=downloader /usr/local/bin/deck  /usr/local/bin/deck
-COPY --from=downloader /usr/local/bin/yq    /usr/local/bin/yq
-COPY --from=downloader /usr/local/bin/tofu  /usr/local/bin/tofu
-COPY --from=downloader /usr/local/bin/xh    /usr/local/bin/xh
+COPY --from=downloader /usr/local/bin/deck    /usr/local/bin/deck
+COPY --from=downloader /usr/local/bin/yq      /usr/local/bin/yq
+COPY --from=downloader /usr/local/bin/tofu    /usr/local/bin/tofu
+COPY --from=downloader /usr/local/bin/xh      /usr/local/bin/xh
+COPY --from=downloader /usr/local/bin/kongctl /usr/local/bin/kongctl
 
 # HTTPie-compatible aliases
 RUN ln -s xh /usr/local/bin/http && \
     ln -s xh /usr/local/bin/https
-
 CMD ["bash"]
 
 
@@ -88,4 +100,5 @@ RUN deck version && \
     xh --version && \
     jq --version && \
     curl --version && \
-    git --version
+    git --version && \
+    kongctl version --full
