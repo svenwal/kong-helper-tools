@@ -77,7 +77,8 @@ RUN apk add --no-cache \
     jq \
     git \
     dialog \
-    ca-certificates
+    ca-certificates \
+    openssl
 
 COPY --from=downloader /usr/local/bin/deck    /usr/local/bin/deck
 COPY --from=downloader /usr/local/bin/yq      /usr/local/bin/yq

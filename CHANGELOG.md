@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-# [AI GW 2.0 Pre-release] - 2026-07-17
+# [3.15] - 2026-07-17
+
+### Added
+
+* Added OpenSSL
 
 ### Updates
 
