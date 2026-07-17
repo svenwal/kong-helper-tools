@@ -95,11 +95,12 @@ CMD ["bash"]
 # Smoke-test stage — used by CI (docker build --target test)
 FROM runtime AS test
 
-RUN deck version && \
-    yq --version && \
-    tofu --version && \
-    xh --version && \
-    jq --version && \
-    curl --version && \
-    git --version && \
-    kongctl version --full
+RUN echo "Deck:      " && deck version && echo "----" && \
+    echo "Kongctl:   " && kongctl version --full && echo "----" && \
+    echo "Yq:        " && yq --version && echo "----" && \
+    echo "Tofu:      " && tofu --version && echo "----" && \
+    echo "Xh:        " && xh --version && echo "----" && \
+    echo "Jq:        " && jq --version && echo "----" && \
+    echo "Curl:      " && curl --version && echo "----" && \
+    echo "Git:       " && git --version && echo "----" && \
+    echo "OpenSSL:   " && openssl version && echo "----"
