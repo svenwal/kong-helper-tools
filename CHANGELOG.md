@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+# [AI GW 2.0 Pre-release] - 2026-07-17
+
+### Updates
+
+* Updated kongctl to 1.5.0
+
 ## [AI GW 2.0 Pre-release] - 2026-07-16
 
 ### Added

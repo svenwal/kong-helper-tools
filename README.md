@@ -13,14 +13,11 @@ A Docker image that bundles the tools most commonly needed for automating, confi
 | Tool | Version | Purpose |
 |------|---------|---------|
 | [decK](https://github.com/kong/deck) | 1.64.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
-| [kongctl](https://github.com/kong/kongctl) | prerelease-aigw-2 | Kong control-plane CLI for AI Gateway workflows |
+| [kongctl](https://github.com/kong/kongctl) | 1.50 | Kong control-plane CLI for AI Gateway workflows |
 | [yq](https://github.com/mikefarah/yq) | 4.53.3 | YAML/JSON processor — manipulate Kong config files |
 | [jq](https://stedolan.github.io/jq/) | apk | JSON query and transformation |
 | [xh](https://github.com/ducaale/xh) | 0.26.1 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |
 | [OpenTofu](https://opentofu.org/) | 1.12.4 | Open-source Terraform-compatible IaC — provision Kong resources |
-| [curl](https://curl.se/) | apk | HTTP requests and automation scripting |
-| [git](https://git-scm.com/) | apk | Source control for config repos and GitOps workflows |
-| bash, dialog | apk | Shell scripting and interactive prompts |
 
 ---
 
@@ -117,7 +114,7 @@ git push origin 3.15
 
 ## Version
 
-Current version: 3.14
+Current version: 3.15
 
 ---
 
