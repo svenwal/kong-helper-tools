@@ -1,10 +1,11 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+# [3.15.0.1] - 2026-07-24
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+### Updates
 
----
+* Updated kongctl to 1.8.0
+
 
 # [3.15] - 2026-07-17
 

@@ -80,7 +80,7 @@ docker build -t kong-helper-tools .
 | Argument | Default | Description |
 |----------|---------|-------------|
 | `DECK_VERSION` | `1.64.0` | decK version to install |
-| `KONGCTL_VERSION` | `prerelease-aigw-2` | kongctl version to install |
+| `KONGCTL_VERSION` | `1.8.0` | kongctl version to install |
 | `YQ_VERSION` | `4.53.3` | yq version to install |
 | `OPENTOFU_VERSION` | `1.12.4` | OpenTofu version to install |
 | `XH_VERSION` | `0.26.1` | xh version to install |
