@@ -1,5 +1,14 @@
 # Changelog
 
+# [3.15.0.2] - 2026-08-03
+
+### Updates
+
+* Updated decK to 1.65.1
+* Updated kongctl to 1.9.0
+* Updated xh to 0.26.2
+* Updated tofu to 1.12.5
+
 # [3.15.0.1] - 2026-07-24
 
 ### Updates
