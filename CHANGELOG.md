@@ -1,5 +1,11 @@
 # Changelog
 
+# [3.15.0.3] - 2026-08-03
+
+### Updates
+
+* Updated kongctl to 1.10.0
+
 # [3.15.0.2] - 2026-08-03
 
 ### Updates
