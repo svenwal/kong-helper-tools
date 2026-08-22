@@ -12,8 +12,8 @@ A Docker image that bundles the tools most commonly needed for automating, confi
 
 | Tool | Version | Purpose |
 |------|---------|---------|
-| [decK](https://github.com/kong/deck) | 1.65.1 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
-| [kongctl](https://github.com/kong/kongctl) | 1.12.0| Kong control-plane CLI for AI Gateway workflows |
+| [decK](https://github.com/kong/deck) | 1.65.2 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
+| [kongctl](https://github.com/kong/kongctl) | 1.13.0| Kong control-plane CLI for AI Gateway workflows |
 | [yq](https://github.com/mikefarah/yq) | 4.53.3 | YAML/JSON processor — manipulate Kong config files |
 | [jq](https://stedolan.github.io/jq/) | apk | JSON query and transformation |
 | [xh](https://github.com/ducaale/xh) | 0.26.2 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |
