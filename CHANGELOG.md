@@ -1,5 +1,14 @@
 # Changelog
 
+# [3.15.0.7] - 2026-09-03
+
+### Updates
+
+* Updated kongctl to 1.15.0
+* Updated kongctl to 1.66.0
+* Updated yq to 4.53.6
+* Updated tofu to 1.12.6
+
 # [3.15.0.7] - 2026-09-01
 
 ### Updates
