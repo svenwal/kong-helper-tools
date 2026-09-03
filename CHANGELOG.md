@@ -5,7 +5,7 @@
 ### Updates
 
 * Updated kongctl to 1.15.0
-* Updated kongctl to 1.66.0
+* Updated deck to 1.66.0
 * Updated yq to 4.53.6
 * Updated tofu to 1.12.6
 
