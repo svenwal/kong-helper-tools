@@ -1,10 +1,10 @@
-FROM alpine:3.21 AS downloader
+FROM alpine:3.24 AS downloader
 
-ARG DECK_VERSION=1.66.0
-ARG KONGCTL_VERSION=v1.20.1
-ARG YQ_VERSION=4.53.6
-ARG OPENTOFU_VERSION=1.12.5
-ARG XH_VERSION=0.26.2
+ARG DECK_VERSION=1.69.0
+ARG KONGCTL_VERSION=v1.21.0
+ARG YQ_VERSION=4.54.1
+ARG OPENTOFU_VERSION=1.13.2
+ARG XH_VERSION=0.26.3
 ARG TARGETPLATFORM
 
 RUN apk add --no-cache curl unzip
@@ -65,11 +65,11 @@ RUN set -ex; \
     rm -rf /tmp/xh.tar.gz "/tmp/xh-v${XH_VERSION}-${ARCH}-unknown-linux-musl"
 
 
-FROM alpine:3.21 AS runtime
+FROM alpine:3.24 AS runtime
 
 LABEL maintainer="Kong Inc."
 LABEL description="Kong Gateway Helper Tools Docker Image"
-LABEL version="3.14"
+LABEL version="3.16"
 
 RUN apk add --no-cache \
     bash \

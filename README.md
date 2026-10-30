@@ -12,12 +12,12 @@ A Docker image that bundles the tools most commonly needed for automating, confi
 
 | Tool | Version | Purpose |
 |------|---------|---------|
-| [decK](https://github.com/kong/deck) | 1.66.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
-| [kongctl](https://github.com/kong/kongctl) | 1.20.1| Kong control-plane CLI for AI Gateway workflows |
-| [yq](https://github.com/mikefarah/yq) | 4.53.6 | YAML/JSON processor — manipulate Kong config files |
+| [decK](https://github.com/kong/deck) | 1.69.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
+| [kongctl](https://github.com/kong/kongctl) | 1.21.0 | Kong control-plane CLI for AI Gateway workflows |
+| [yq](https://github.com/mikefarah/yq) | 4.54.1 | YAML/JSON processor — manipulate Kong config files |
 | [jq](https://stedolan.github.io/jq/) | apk | JSON query and transformation |
-| [xh](https://github.com/ducaale/xh) | 0.26.2 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |
-| [OpenTofu](https://opentofu.org/) | 1.12.6 | Open-source Terraform-compatible IaC — provision Kong resources |
+| [xh](https://github.com/ducaale/xh) | 0.26.3 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |
+| [OpenTofu](https://opentofu.org/) | 1.13.2 | Open-source Terraform-compatible IaC — provision Kong resources |
 
 ---
 
@@ -79,11 +79,11 @@ docker build -t kong-helper-tools .
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `DECK_VERSION` | `1.64.0` | decK version to install |
-| `KONGCTL_VERSION` | `1.8.0` | kongctl version to install |
-| `YQ_VERSION` | `4.53.3` | yq version to install |
-| `OPENTOFU_VERSION` | `1.12.4` | OpenTofu version to install |
-| `XH_VERSION` | `0.26.1` | xh version to install |
+| `DECK_VERSION` | `1.69.0` | decK version to install |
+| `KONGCTL_VERSION` | `1.21.0` | kongctl version to install |
+| `YQ_VERSION` | `4.54.1` | yq version to install |
+| `OPENTOFU_VERSION` | `1.13.2` | OpenTofu version to install |
+| `XH_VERSION` | `0.26.3` | xh version to install |
 
 Override during build:
 
@@ -106,15 +106,15 @@ docker build \
 To publish a new release, push a git tag:
 
 ```bash
-git tag 3.15
-git push origin 3.15
+git tag 3.16
+git push origin 3.16
 ```
 
 ---
 
 ## Version
 
-Current version: 3.15
+Current version: 3.16
 
 ---
 

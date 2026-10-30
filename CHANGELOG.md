@@ -1,5 +1,16 @@
 # Changelog
 
+# [3.16.0.2] - 2026-10-30
+
+### Updates
+
+* Updated alpine base image to 3.24
+* Updated deck to 1.69.0
+* Updated kongctl to 1.21.0
+* Updated yq to 4.54.1
+* Updated tofu to 1.13.2
+* Updated xh to 0.26.3
+
 # [3.16.0.1] - 2026-09-24
 
 ### Updates
