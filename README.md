@@ -13,11 +13,11 @@ A Docker image that bundles the tools most commonly needed for automating, confi
 | Tool | Version | Purpose |
 |------|---------|---------|
 | [decK](https://github.com/kong/deck) | 1.69.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
-| [kongctl](https://github.com/kong/kongctl) | 1.25.0 | Kong control-plane CLI for AI Gateway workflows |
+| [kongctl](https://github.com/kong/kongctl) | 1.26.0 | Kong control-plane CLI for AI Gateway workflows |
 | [yq](https://github.com/mikefarah/yq) | 4.54.1 | YAML/JSON processor — manipulate Kong config files |
 | [jq](https://stedolan.github.io/jq/) | apk | JSON query and transformation |
 | [xh](https://github.com/ducaale/xh) | 0.26.3 | HTTPie-compatible HTTP client (`http`/`https` commands); single static binary — no Python runtime |
-| [OpenTofu](https://opentofu.org/) | 1.13.2 | Open-source Terraform-compatible IaC — provision Kong resources |
+| [OpenTofu](https://opentofu.org/) | 1.13.8 | Open-source Terraform-compatible IaC — provision Kong resources |
 
 ---
 
@@ -80,9 +80,9 @@ docker build -t kong-helper-tools .
 | Argument | Default | Description |
 |----------|---------|-------------|
 | `DECK_VERSION` | `1.69.0` | decK version to install |
-| `KONGCTL_VERSION` | `1.25.0` | kongctl version to install |
+| `KONGCTL_VERSION` | `1.26.0` | kongctl version to install |
 | `YQ_VERSION` | `4.54.1` | yq version to install |
-| `OPENTOFU_VERSION` | `1.13.2` | OpenTofu version to install |
+| `OPENTOFU_VERSION` | `1.13.8` | OpenTofu version to install |
 | `XH_VERSION` | `0.26.3` | xh version to install |
 
 Override during build:
