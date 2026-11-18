@@ -5,7 +5,7 @@
 ### Updates
 
 * Updated kongctl to 1.28.3
-
+* Updated deck to 1.70.0
 
 # [3.16.0.4] - 2026-11-05
 
