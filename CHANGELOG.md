@@ -1,5 +1,12 @@
 # Changelog
 
+# [3.16.0.6] - 2026-11-21
+
+### Updates
+
+* Fixed the update `3.16.0.5` that didn't work
+
+
 # [3.16.0.5] - 2026-11-18
 
 ### Updates

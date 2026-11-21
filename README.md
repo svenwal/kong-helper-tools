@@ -12,7 +12,7 @@ A Docker image that bundles the tools most commonly needed for automating, confi
 
 | Tool | Version | Purpose |
 |------|---------|---------|
-| [decK](https://github.com/kong/deck) | 1.69.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
+| [decK](https://github.com/kong/deck) | 1.70.0 | Declarative configuration management for Kong Gateway (sync, diff, validate configs) |
 | [kongctl](https://github.com/kong/kongctl) | 1.28.3 | Kong control-plane CLI for AI Gateway workflows |
 | [yq](https://github.com/mikefarah/yq) | 4.54.1 | YAML/JSON processor — manipulate Kong config files |
 | [jq](https://stedolan.github.io/jq/) | apk | JSON query and transformation |
@@ -79,7 +79,7 @@ docker build -t kong-helper-tools .
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `DECK_VERSION` | `1.69.0` | decK version to install |
+| `DECK_VERSION` | `1.70.0` | decK version to install |
 | `KONGCTL_VERSION` | `1.28.3` | kongctl version to install |
 | `YQ_VERSION` | `4.54.1` | yq version to install |
 | `OPENTOFU_VERSION` | `1.13.8` | OpenTofu version to install |
