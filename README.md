@@ -118,7 +118,9 @@ git add CHANGELOG.md
 git commit -m "chore: release 3.16.0.7"
 git push origin main
 ```
-4) Create and push the tag
+4) Wait for the CI workflow on main to go green
+
+5) Create and push the tag
 Pushing it triggers the Docker Hub workflow
 ```bash
 git tag 3.16.0.7
