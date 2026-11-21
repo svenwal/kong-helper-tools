@@ -1,5 +1,11 @@
 # Changelog
 
+# [3.16.0.7] - 2026-11-21
+
+### Fixes
+
+* Rebuilt image so it really contains kongctl 1.28.3 and deck 1.70.0 (3.16.0.5 and 3.16.0.6 were tagged before the Dockerfile bump)
+
 # [3.16.0.6] - 2026-11-21
 
 ### Updates
