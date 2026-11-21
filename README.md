@@ -103,14 +103,27 @@ docker build \
 | **CI** | Every push / PR | Builds `--target test` stage, which runs a smoke test verifying every binary starts correctly |
 | **Docker Hub** | Git tag push | Builds multi-arch image and pushes `latest` + tag to Docker Hub; also updates the Docker Hub description from this README |
 
-To publish a new release, push a git tag:
-
+## How create a new release
+The release is for instance `3.16.0.7`
+1) Update `Dockerfile` and the release variables of tools:
+  - `DECK_VERSION`
+  - `KONGCTL_VERSION`
+  - `YQ_VERSION`
+  - etc.
+2) Update `CHANGELOG.md`
+3) Commit and push `main` first
 ```bash
-git tag 3.16
-git push origin 3.16
+git add Dockerfile
+git add CHANGELOG.md
+git commit -m "chore: release 3.16.0.7"
+git push origin main
 ```
-
----
+4) Create and push the tag
+Pushing it triggers the Docker Hub workflow
+```bash
+git tag 3.16.0.7
+git push origin 3.16.0.7
+```
 
 ## Version
 
